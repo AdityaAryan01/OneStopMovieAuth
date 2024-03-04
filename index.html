@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication OSM</title>
+    <link rel="stylesheet" href="styleAuth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="authjs.js" type="module"></script>
+</head>
+<body id="bodyy">
+    <div class="container">
+        <div class="box">
+            <h1 class="header">OneStopMovie<br>Get started</h1>
+            <form class="my-form">
+                <div class="sub-form">
+                    <label for="email">Email address</label>
+                    <input type="text" name="email" id="email" placeholder="name@domain.com">
+                </div>
+                <div class="sub-form">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="sub-form">
+                    <input type="button" type="button" id="bttn" value="Next">
+                </div>
+            </form>
+            <div id="word">
+                <p>------------------------- or ---------------------------</p>
+            </div>
+            <div class="button">
+            <button id="button" name="Sign up with Google" onclick="btnclick()"><i class="fa-brands fa-google fa-2xl"></i></button>
+                <div class="google">
+                    <p>Sign up with Google</p>
+                </div>
+            </div>
+            <div class="liner"></div>
+            <p id="para">Already have an account?<button type="button" id="login-btn">Login Here</button></p>
+        </div>
+    </div>
+    <div id="username"><p>t</p></div>
+    <div id="username-email"></div>
+    <div id="signinname-email"></div>
+ 
+
+    
+
+    <div class="google-container">
+        <h1 class="header1">Sign IN / Login</h1>
+        <div class="google-box">
+            <form>
+                <div class="g-form">
+                    <label for="email">Email address</label>
+                    <input type="text" name="Email" id="Email" placeholder="name@domain.com">
+                </div>
+                <br>
+                <div class="g-form">
+                    <label for="password">Password</label>
+                    <input type="Password" name="Password" id="Password">
+                </div>
+                <div class="g-form">
+                    <input type="button" type="button" id="loginbttn" value="Sign in">
+                </div>
+                <div class="g-form">
+                  <button type="button" onclick="backbtn()" id="goback"><i class="fa-solid fa-arrow-left fa-2xl"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

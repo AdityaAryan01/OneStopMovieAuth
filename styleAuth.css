@@ -1,0 +1,247 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:#121212;
+    color: white;
+    font: normal 19px helvetica, arial,sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width:100%;
+    margin-top: 100px;
+    overflow: hidden;
+   
+}
+.box{
+    width: 28%;
+    box-sizing: border-box;
+}
+
+.header{
+    font-size: 50px;
+    line-height: 1.2em;
+    margin-bottom: 40px;   
+}
+
+
+.sub-form{
+    padding-bottom: 10px;
+}
+.sub-form label {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 8px;
+    
+}    
+.sub-form input[type="text"]{
+    margin-bottom: 10px; 
+}
+.sub-form input{
+    width: 93%;
+    padding: 15px 0px 15px 12px;
+    background-color: #121212;
+    font-size:18px;
+    color:white;
+    font-weight: bold;
+    border: solid rgba(245, 245, 245, 0.786).5px;
+    border-radius: 4px;
+}
+.sub-form input[type="button"]{
+    width: 98%;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(223, 66, 237);
+    transition: 0.1s ease-in-out;
+}
+.sub-form input[type="button"]:hover{
+    color:rgb(223, 66, 237);
+    background-color:#121212;
+    transition: 0.1s ease-in-out;
+    border: solid 1.5px white;
+}
+
+#word p{
+    margin-left:6px;
+    color: rgba(245, 245, 245, 0.713);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+.button{
+    width: 98%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-around;
+    border: solid 0.2px rgba(245, 245, 245, 0.786);
+    border-radius: 30px;
+    background-color:#121212;
+    cursor: pointer;
+}
+.button button{
+    border: none;
+    background-color:#121212 ;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.liner{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    border:solid 0.2px rgba(245, 245, 245, 0.348);
+}
+#para{
+    text-align: center;
+    padding-bottom:20px;
+    color: rgba(245, 245, 245, 0.604);
+    font-size: 16px;
+}
+
+.google-container{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    
+}
+.header1{
+    display: none;
+    font-size: 50px;
+    line-height: 1.2em;
+    color: white;
+    margin-bottom: 40px;
+}
+.google-box{
+    display: none;
+    padding: 50px 60px 30px 60px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.google-box:hover{
+    border: solid 1px black;
+    box-shadow: 0px 0px 15px rgb(223, 66, 237);
+}
+.google-box.active{
+    display: block;
+}
+.g-form label{
+    display: block;
+    padding-bottom: 8px;
+}
+.g-form input{
+    font-size: 15px;
+    font-weight: bold;
+    padding:15px 0px 15px 12px;
+    background-color:#121212;
+    color:white;
+    border: solid rgba(245, 245, 245, 0.786).5px;
+    border-radius: 4px;
+}
+.g-form input[type="button"]{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(223, 66, 237);
+}
+#login-btn{
+    text-decoration: none;
+    color:  rgb(229, 94, 241);
+    background-color:#121212 ;
+    border: none;
+    margin-left: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#goback{
+    text-decoration: none;
+    background-color: #121212;
+    color:rgb(229, 94, 241) ;
+    border: none;
+    margin-top:25px;
+
+}
+
+
+@media(max-width:1270px){
+    #word{
+        display: none;
+    }
+}
+@media(max-width:1025px){
+    .box{
+        width: 38%;
+    }
+    .header{
+        font-size: 45px;
+        margin-right: 30px;
+    }
+    .header1{
+        font-size: 40px;
+        margin-right: 20px;
+    }
+}
+
+
+@media(max-width:760px){
+    .box{
+        width: 55%;
+    }
+    .header{
+        font-size: 40px;
+    }
+    .header1{
+        font-size: 40px;
+    }
+    .button{
+        font-size:16px;
+        margin-left: 8px;  
+    }
+    .button button{
+        padding-bottom: 6px;
+    }
+    .sub-form label {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
+        padding-bottom: 4px;
+    }
+    .sub-form input[type="button"]{
+        margin-left: 6px;
+    }
+    .sub-form input[type="text"]{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .sub-form input[type="password"]{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .liner{
+        margin-left: 10px;
+    }
+}
+
